@@ -21,7 +21,7 @@ namespace Complex_Pair_Program
             }
 
             //Allows user to remove cards
-            Console.WriteLine("Please type the name of any cards that you wish to remove. Once you are done, type 'Done'.");
+            Console.WriteLine("\nPlease type the name of any cards that you wish to remove. Once you are done, type 'Done'.");
 
             while (true)
             {

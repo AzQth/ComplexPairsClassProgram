@@ -16,12 +16,15 @@ namespace Complex_Pair_Program
             points3,
         }
 
-        private object cardClass = new Dictionary<object, Card>()
+        public static Dictionary<EnumerableCards, Card> cardClass = new Dictionary<EnumerableCards, Card>()
         {
-            { EnumerableCards.gold1, },
-            { EnumerableCards.gold2, }
+            { EnumerableCards.gold1, CardCreator.CreateGold(1)},
+            { EnumerableCards.gold2, CardCreator.CreateGold(2)},
+            { EnumerableCards.gold3, CardCreator.CreateGold(3)},
+            { EnumerableCards.points1, CardCreator.CreatePoint(1)},
+            { EnumerableCards.points2, CardCreator.CreatePoint(2)},
+            { EnumerableCards.points3, CardCreator.CreatePoint(3)},
         };
 
-        public object CardClass { get => cardClass; set => cardClass = value; }
     }
 }
